@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('product', function () {
     return view('productdetail');
 });
+
+Route::get('/','HomeController@homepage')
