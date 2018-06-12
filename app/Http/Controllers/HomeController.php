@@ -54,6 +54,8 @@ public $products = [
           $dress = $product;
         }
       }
+      if($dress == null)
+        abort(404);
 
       return view('productdetail',['dress' => $dress]);
     }

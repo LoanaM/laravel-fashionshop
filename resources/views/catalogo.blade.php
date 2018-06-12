@@ -8,19 +8,13 @@
       </div>
       <div class="wrapper dresses">
 
-        <a href="dress/1">
-          <img src="{{$dress[0]['image']}}" alt="">
+      @for ($i=0; $i < 4; $i++)
+        <a href="dress/{{$i+1}}">
+          <img src="{{$dress[$i]['image']}}" alt="">
         </a>
-        <a href="dress/2">
-          <img src="{{$dress[1]['image']}}" alt="">
-        </a>
-        <a href="dress/3">
-          <img src="{{$dress[2]['image']}}" alt="">
-        </a>
-        <a href="dress/4">
-          <img src="{{$dress[3]['image']}}" alt="">
-        </a>
+      @endfor
+
       </div>
-      
+
     </div>
 @endsection
