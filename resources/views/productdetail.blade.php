@@ -1,11 +1,16 @@
 @extends('layout')
 
 @section('main')
-  <h2>{{}}</h2>
-  <div class="foto">
-  </div>
-  <div class="descriptdress">
-    {{}}
+  <div class="wrapper">
+    
+    <h2>{{$dress['name']}}</h2>
+    <div class="foto">
+      <img src="{{$dress['image']}}" alt="">
+    </div>
+    <div class="descriptdress">
+      {{$dress['description']}}
+    </div>
+
   </div>
 
 @endsection

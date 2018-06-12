@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.wrapper, .presentation {
+  width: 100%;
+  height: auto;
+}
+
+.dresses img {
+  width: 24%;
+  margin: 15px 0px;
+}
+
+.searchbar,.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.searchbar {
+  background-color: black;
+  color: white;
+}
+.logo {
+  font-size: 40px;
+}
+
+.foto img {
+  width: 400px;
+}
+.descriptdress {
+  width: 30%;
+  height: auto;
+  position: relative;
+  top: -400px;
+  left: 500px;
+}

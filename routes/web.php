@@ -11,12 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('catalogo');
-});
 
-Route::get('product', function () {
-    return view('productdetail');
-});
+Route::get('/','HomeController@homepage')->name('hp');
 
-Route::get('/','HomeController@homepage')
+Route::get('/dress/{dressid}','HomeController@dress')->name('dr1');
