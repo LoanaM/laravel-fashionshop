@@ -44,7 +44,7 @@ public $products = [
 
     public function homepage() {
 
-      return view('catalogo',['dress' => $this->products]);
+      return view('catalogo',['dresses' => $this->products]);
     }
 
     public function dress($dressid){

@@ -14,4 +14,4 @@
 
 Route::get('/','HomeController@homepage')->name('hp');
 
-Route::get('/dress/{dressid}','HomeController@dress')->name('dr1');
+Route::get('/dress/{dressid}','HomeController@dress')->name('dr');
