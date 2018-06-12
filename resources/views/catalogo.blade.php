@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+  Catalogo
+@endsection  
+
 @section('main')
     <div class="container">
 

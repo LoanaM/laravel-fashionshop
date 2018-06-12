@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+  Dettaglio prodotto
+@endsection
+
 @section('main')
   <div class="wrapper">
 

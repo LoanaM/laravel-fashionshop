@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/style.css">
-    <title></title>
+    <title>@yield('title')</title>
   </head>
   <body>
 
@@ -23,7 +23,7 @@
           MBK
         </div>
         <div class="menu">
-          HOME WOMAN MAN ACCESSORIES
+          <a href="/">HOME</a> WOMAN MAN ACCESSORIES
         </div>
       </div>
       <hr>
