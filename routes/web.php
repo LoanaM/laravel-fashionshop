@@ -14,4 +14,6 @@
 
 Route::get('/','HomeController@homepage')->name('hp');
 
+Route::post('/add','HomeController@add')->name('add');
+
 Route::get('/dress/{dressid}','HomeController@dress')->name('dr');

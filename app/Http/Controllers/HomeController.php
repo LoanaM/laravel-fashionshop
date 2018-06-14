@@ -15,9 +15,21 @@ class HomeController extends Controller
       return view('catalogo',['dresses' => $products]);
     }
 
+    public function add(Request $request) {
+      $new_product = new Product();
+      $new_product->name = $request->input('name');
+      $new_product->brand = $request->input('brand');
+      $new_product->description = $request->input('description');
+      $new_product->price = $request->input('price');
+      $new_product->image = $request->input('image');
+
+      $new_product->save();
+    }
+
+
     public function dress($dressid){
       $products = Product::all();
-      
+
       $dress = null;
       foreach ($products as $product) {
         if ($product['id']==$dressid) {
