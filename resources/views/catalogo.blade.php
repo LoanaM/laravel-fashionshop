@@ -2,7 +2,7 @@
 
 @section('title')
   Catalogo
-@endsection  
+@endsection
 
 @section('main')
     <div class="container">
@@ -14,11 +14,11 @@
 
       <div class="wrapper dresses">
          {{-- soluzione con ciclo for --}}
-          @for ($i=0; $i < 4; $i++)
+          {{-- @for ($i=0; $i < 4; $i++)
             <a href="dress/{{$i+1}}">
               <img src="{{$dresses[$i]['image']}}" alt="">
             </a>
-          @endfor
+          @endfor --}}
 
           {{-- soluzione con foreach --}}
           @foreach ($dresses as $product)
