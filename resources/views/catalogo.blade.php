@@ -14,7 +14,7 @@
 
       {{-- Form pe inserire nuovo abito --}}
       <form class="" action="{{route('add')}}" method="POST">
-        @csrf
+        {{csrf_field()}}
         <input type="text" name="name" value="" placeholder="Inserisci un nuovo modello"><br>
         <input type="text" name="brand" value="" placeholder="Inserisci la marca">
         <input type="text" name="description" value="" placeholder="Inserisci descrizione">

@@ -41,8 +41,5 @@ class HomeController extends Controller
 
       return view('productdetail',['dress' => $dress]);
     }
-
-
-
-
+    
 }
